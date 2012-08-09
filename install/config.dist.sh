@@ -1,0 +1,1 @@
+export APPLICATION_ENV=##gearman.manager.env##

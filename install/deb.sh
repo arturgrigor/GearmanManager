@@ -21,6 +21,9 @@ CONFIGDIR=/etc/gearman-manager
 GEARMANUSER="gearman"
 PARAMS="-c ${CONFIGDIR}/config.ini"
 
+# Additional variables
+. ${CONFIGDIR}/config.sh
+
 test -x ${DAEMON} || exit 0
 
 . /lib/lsb/init-functions

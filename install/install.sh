@@ -66,8 +66,8 @@ ln -fs ${INSTALL_DIR}/${PHPLIB}-manager.php ${DAEMON}
 echo "Installing executable to ${DAEMON}"
 
 # create config folders
-mkdir -p /etc/gearman-manager/workers
-cp ${WORKING_DIR}/config.dist.ini ${CONFIG_DIR}/config.ini
+mkdir -p ${CONFIG_DIR}
+cp ${WORKING_DIR}/config.default.ini ${CONFIG_DIR}/config.ini
 echo "Installing configs to ${CONFIG_DIR}"
 
 # install init script

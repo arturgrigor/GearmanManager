@@ -24,6 +24,9 @@ CONFIGDIR=/etc/gearman-manager
 GEARMANUSER="gearmand"
 PARAMS="-c ${CONFIGDIR}/config.ini"
 
+# Additional variables
+. ${CONFIGDIR}/config.sh
+
 RETVAL=0
 
 start() {
